@@ -1,6 +1,0 @@
-setup.py
-soul_interpreter.egg-info/PKG-INFO
-soul_interpreter.egg-info/SOURCES.txt
-soul_interpreter.egg-info/dependency_links.txt
-soul_interpreter.egg-info/entry_points.txt
-soul_interpreter.egg-info/top_level.txt

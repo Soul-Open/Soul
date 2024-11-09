@@ -1,6 +1,0 @@
-Hi, This is the author who made "Soul"
-My name is Aaranye in Real life But I call myself Alan because i dont like my name "Aaranye"
-I am not even a Teenager but still made an coding Language with the help of ChatGPT
-If you also want to make an programing language yourself, Use Soul to make it.
-Beause of the easy and advanced Features made in Python.
-Thank you for reading.
