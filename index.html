@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Landing section */
+        #landing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+        }
+        #landing h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        #landing p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+        .button {
+            padding: 12px 25px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #555;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #features {
+            background-color: #f9f9f9;
+        }
+        #features h2,
+        #demo h2,
+        #download h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .github-button {
+            padding: 15px 30px;
+            background: #2575fc;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .github-button:hover {
+            background: #6a11cb;
+        }
+
+        /* Demo section */
+        #demo code {
+            display: inline-block;
+            background: #333;
+            color: #f8f8f2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            white-space: pre;
+        }
+
+        /* Download section */
+        .download-button {
+            padding: 15px 30px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+            display: inline-block; /* Ensure it behaves like a button */
+        }
+        .download-button:hover {
+            background: #555;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #222;
+            color: #fff;
+        }
+        footer a {
+            color: #00b4d8;
+            font-weight: bold;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode a {
+            color: #bb86fc;
+        }
+
+        .dark-mode footer {
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <h1>Welcome to Soul</h1>
+        <p>Redefining the boundaries of programming.</p>
+        <a href="#download" class="button">Download Soul</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <p>Explore the powerful features of Soul:</p>
+        <a href="https://www.github.com/aaru-bit" target="_blank" class="github-button">Alan's GitHub Page</a>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo">
+        <h2>Demo</h2>
+        <p>See how simple it is to get started with Soul:</p>
+        <code>print Hello world!</code>
+        <p2>Or try display="Hello World!" in our C++ version<p2>
+    </section>
+
+    <section id="image-section">
+    <p>Scan this QR Code:</p>
+    <img src="https://raw.githubusercontent.com/aaru-bit/SoulWebsite/ea9333b750894adc036ad2be3a1f6ea593b5da21/IMG_20241127_192235.jpg" alt="Soul Website QR Code" style="max-width: 300px; height: auto; border-radius: 10px;">
+</section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <h2>Download Soul</h2>
+        <p>Get the latest version of Soul here:</p>
+        <a href="https://github.com/aaru-bit/Soul" target="_blank" class="download-button">Download Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Stay connected with us on <a href="https://www.youtube.com/channel/UCMOdyupQQE-wWuBfqg6b_3A" target="_blank">YouTube</a> for tutorials and updates.</p>
+        <p><strong><a href="https://www.github.com/SoulWebsite/aboutalan.html">About Alan</a></strong></p> <!-- Link to About Me Page -->
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </footer>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+</html>
