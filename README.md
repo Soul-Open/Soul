@@ -26,7 +26,7 @@ Windows
 
 Linux/macOS
 
-git clone https://github.com/aaru-bit/Soul.git  
+git clone https://github.com/Open-Soul/Soul.git  
 cd Soul  
 chmod +x install.sh  
 ./install.sh
@@ -63,3 +63,5 @@ Contributions are welcome! If you’d like to improve Soul, follow these steps:
 ⚖️ License
 
 Soul is licensed under the MIT License, giving you the freedom to use, modify, and distribute it.
+
+This language is still in development, The repo will be updated as soon the language is finished.
